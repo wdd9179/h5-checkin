@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../../resources/views/**/*.blade.php';
+
+@theme {
+    --font-sans: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', 'Helvetica Neue', Arial, sans-serif;
+    --color-brand-50:  #eef6ff;
+    --color-brand-100: #d9eaff;
+    --color-brand-500: #3b82f6;
+    --color-brand-600: #2563eb;
+    --color-brand-700: #1d4ed8;
+}
+
+/* 全局基础样式 */
+html, body {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: var(--font-sans);
+    background: #f5f7fb;
+    color: #111827;
+}
+
+/* 微信浏览器优化 */
+input, button, select, textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: inherit;
+}
+
+/* 防按钮被双击放大 */
+button { touch-action: manipulation; }
+
+/* 防止横向滚动 */
+body { overflow-x: hidden; }
