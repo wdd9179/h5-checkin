@@ -15,7 +15,7 @@
 /.zed
 /auth.json
 /node_modules
-/public/build
+# /public/build            # 1GB 内存服务器不装 Node, 把 build 产物提交进 git
 /public/fonts-manifest.dev.json
 /public/hot
 /public/storage
